@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <!-- LOADING SCREEN -->
+<div id="loader">
+    <div class="loader-content">
+
+        <img src="school-logo.png.png"
+             alt="CIT-U Logo"
+             class="school-logo">
+    </div>
+</div>
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <nav>
+
+        <h2 class="logo">Portfolio</h2>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Me</a>
+
+        <a href="projects.html">Projects</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+        <header>
+
+            <h1>
+                Hi, I'm
+                <span>Rammuel S. Bacalan</span>
+            </h1>
+
+            <p>CIT-U | STEM | STUDENT</p>
+
+        </header>
+
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <h2>Welcome to My Portfolio</h2>
+
+            <p>
+                Hello! I'm a passionate web developer who enjoys designing
+                modern, responsive websites and continuously learning new
+                technologies. Feel free to explore my portfolio to learn
+                more about me and my projects.
+            </p>
+
+            <a href="about.html" class="button">
+                Learn More About Me
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         LOADING SCREEN SCRIPT
+    ========================== -->
+
+    <script>
+
+        window.addEventListener("load", function () {
+
+            const loader = document.getElementById("loader");
+
+            setTimeout(function () {
+
+                loader.classList.add("hidden");
+
+            }, 500);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
