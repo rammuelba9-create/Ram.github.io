@@ -242,26 +242,36 @@ header p {
 }
 
 
-/* ==========================
+/* ==================================================
    CANVA PRESENTATION
-========================== */
+================================================== */
 
-.canva-container {
+/*
+   This is specifically for the Digital Task card.
+   It allows the Canva presentation to use the full
+   available width.
+*/
+
+.digital-task {
+    width: 100%;
+
+    max-width: none;
+}
+
+
+/* CANVA CONTAINER */
+
+.digital-task .canva-container {
+
     position: relative;
 
     width: 100%;
 
-    /*
-       LARGE HEIGHT
-       This makes Canva much bigger
-    */
-    height: 85vh;
-
-    min-height: 700px;
+    height: 1000px;
 
     margin-top: 30px;
 
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     overflow: hidden;
 
@@ -273,16 +283,27 @@ header p {
 }
 
 
-.canva-container iframe {
+/* CANVA IFRAME */
+
+.digital-task .canva-container iframe {
+
     position: absolute;
 
     top: 0;
+
     left: 0;
 
     width: 100%;
+
     height: 100%;
 
+    min-width: 100%;
+
+    min-height: 100%;
+
     border: none;
+
+    display: block;
 }
 
 
@@ -525,17 +546,22 @@ header p {
         padding: 60px;
     }
 
+
     nav {
         width: 260px;
     }
 
-    /*
-       BIG CANVA ON DESKTOP
-    */
-    .canva-container {
-        height: 85vh;
 
-        min-height: 700px;
+    /*
+       LARGE CANVA
+    */
+
+    .digital-task .canva-container {
+
+        width: 100%;
+
+        height: 1100px;
+
     }
 
 }
@@ -569,10 +595,16 @@ header p {
     }
 
 
-    .canva-container {
-        height: 75vh;
+    /*
+       TABLET CANVA
+    */
 
-        min-height: 600px;
+    .digital-task .canva-container {
+
+        width: 100%;
+
+        height: 850px;
+
     }
 
 }
@@ -584,7 +616,9 @@ header p {
 
 @media (max-width: 600px) {
 
-    /* NAVIGATION */
+    /* ==========================
+       NAVIGATION
+    ========================== */
 
     nav {
         position: relative;
@@ -632,7 +666,9 @@ header p {
     }
 
 
-    /* MAIN */
+    /* ==========================
+       MAIN
+    ========================== */
 
     main {
         margin-left: 0;
@@ -643,7 +679,9 @@ header p {
     }
 
 
-    /* HEADER */
+    /* ==========================
+       HEADER
+    ========================== */
 
     header {
         text-align: center;
@@ -664,7 +702,9 @@ header p {
     }
 
 
-    /* HERO */
+    /* ==========================
+       HERO
+    ========================== */
 
     .hero {
         padding: 25px 20px;
@@ -683,7 +723,9 @@ header p {
     }
 
 
-    /* BUTTON */
+    /* ==========================
+       BUTTON
+    ========================== */
 
     .button {
         padding: 12px 22px;
@@ -692,7 +734,9 @@ header p {
     }
 
 
-    /* CARDS */
+    /* ==========================
+       CARDS
+    ========================== */
 
     .card {
         padding: 20px;
@@ -709,27 +753,33 @@ header p {
     }
 
 
-    /* CANVA */
+    /* ==========================
+       CANVA
+    ========================== */
 
-    .canva-container {
+    .digital-task .canva-container {
+
         width: 100%;
 
-        height: 75vh;
-
-        min-height: 550px;
+        height: 750px;
 
         margin-top: 20px;
+
     }
 
 
-    /* CONTACT */
+    /* ==========================
+       CONTACT
+    ========================== */
 
     .contact-info {
         padding: 25px 20px;
     }
 
 
-    /* ABOUT */
+    /* ==========================
+       ABOUT
+    ========================== */
 
     .profile {
         flex-direction: column;
@@ -782,87 +832,12 @@ header p {
     }
 
 
-    .canva-container {
-        height: 70vh;
-
-        min-height: 500px;
-    }
-
-}
-/* =========================================
-   LARGE CANVA EMBED
-========================================= */
-
-.digital-task {
-    width: 100%;
-    max-width: none;
-}
-
-.digital-task .canva-container {
-    width: 100% !important;
-    height: 1000px !important;
-
-    margin-top: 30px;
-    margin-bottom: 20px;
-
-    position: relative;
-
-    overflow: hidden;
-
-    border-radius: 12px;
-
-    background: white;
-}
-
-.digital-task .canva-container iframe {
-    position: absolute;
-
-    width: 100% !important;
-    height: 100% !important;
-
-    top: 0;
-    left: 0;
-
-    border: none;
-
-    display: block;
-}
-
-
-/* =========================================
-   LARGE DESKTOP
-========================================= */
-
-@media (min-width: 1200px) {
+    /* SMALL PHONE CANVA */
 
     .digital-task .canva-container {
-        height: 1100px !important;
-    }
 
-}
+        height: 650px;
 
-
-/* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 900px) {
-
-    .digital-task .canva-container {
-        height: 850px !important;
-    }
-
-}
-
-
-/* =========================================
-   PHONE
-========================================= */
-
-@media (max-width: 600px) {
-
-    .digital-task .canva-container {
-        height: 750px !important;
     }
 
 }
