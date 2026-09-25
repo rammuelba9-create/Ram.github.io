@@ -789,3 +789,80 @@ header p {
     }
 
 }
+/* =========================================
+   LARGE CANVA EMBED
+========================================= */
+
+.digital-task {
+    width: 100%;
+    max-width: none;
+}
+
+.digital-task .canva-container {
+    width: 100% !important;
+    height: 1000px !important;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: white;
+}
+
+.digital-task .canva-container iframe {
+    position: absolute;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    top: 0;
+    left: 0;
+
+    border: none;
+
+    display: block;
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1200px) {
+
+    .digital-task .canva-container {
+        height: 1100px !important;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .digital-task .canva-container {
+        height: 850px !important;
+    }
+
+}
+
+
+/* =========================================
+   PHONE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .digital-task .canva-container {
+        height: 750px !important;
+    }
+
+}
