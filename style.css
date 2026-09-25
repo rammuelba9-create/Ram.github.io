@@ -521,3 +521,98 @@ header p{
     }
 
 }
+/* =========================================
+   CANVA PRESENTATION
+========================================= */
+
+.canva-container {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
+
+    background: #ffffff;
+}
+
+
+/* Canva iframe */
+
+.canva-container iframe {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+
+/* =========================================
+   CANVA LINK
+========================================= */
+
+.canva-link {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.canva-link:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .canva-container {
+
+        /*
+         * On phones the presentation
+         * gets more vertical space.
+         */
+
+        aspect-ratio: 9 / 16;
+
+    }
+
+    .canva-link {
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+}
