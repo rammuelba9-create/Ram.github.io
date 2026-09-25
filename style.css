@@ -520,23 +520,25 @@ header p{
         font-size: 14px;
     }
 
-/* =================================
+/* ==============================
    CANVA PRESENTATION
-================================= */
+============================== */
 
 .canva-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 80vh;
 
-    margin-top: 20px;
-    margin-bottom: 20px;
+    min-height: 650px;
+
+    margin-top: 25px;
+    margin-bottom: 25px;
 
     overflow: hidden;
 
-    border-radius: 10px;
+    border-radius: 12px;
 
-    box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
     background: white;
 }
@@ -554,14 +556,31 @@ header p{
 }
 
 
-/* =================================
-   MOBILE
-================================= */
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width: 900px) {
+
+    .canva-container {
+        height: 75vh;
+        min-height: 600px;
+    }
+
+}
+
+
+/* ==============================
+   PHONE
+============================== */
 
 @media (max-width: 600px) {
 
     .canva-container {
-        aspect-ratio: 9 / 16;
+        height: 75vh;
+        min-height: 550px;
+
+        border-radius: 8px;
     }
 
 }
