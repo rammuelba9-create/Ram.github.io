@@ -520,9 +520,9 @@ header p{
         font-size: 14px;
     }
 
-/* =========================
-   CANVA EMBED
-========================= */
+/* =================================
+   CANVA PRESENTATION
+================================= */
 
 .canva-container {
     position: relative;
@@ -536,15 +536,12 @@ header p{
 
     border-radius: 10px;
 
-    box-shadow:
-        0 2px 8px rgba(63, 69, 81, 0.16);
+    box-shadow: 0 2px 8px rgba(63, 69, 81, 0.16);
 
-    background: #ffffff;
+    background: white;
 }
 
-
 .canva-container iframe {
-
     position: absolute;
 
     top: 0;
@@ -554,21 +551,17 @@ header p{
     height: 100%;
 
     border: none;
-
 }
 
 
-
-/* =========================
-   MOBILE CANVA
-========================= */
+/* =================================
+   MOBILE
+================================= */
 
 @media (max-width: 600px) {
 
     .canva-container {
-
         aspect-ratio: 9 / 16;
-
     }
 
 }
